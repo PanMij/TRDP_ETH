@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../TRDP_PL_test.gen/sources_1/ip/clk_wiz_1_1" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ee60/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../TRDP_PL_test.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../TRDP_PL_test.srcs/sources_1/new/crc32_d8.v" \
+"../../../../TRDP_PL_test.srcs/sources_1/new/ethernet_controller.v" \
+"../../../../TRDP_PL_test.srcs/sources_1/new/ethernet_controller_rx.v" \
+"../../../../TRDP_PL_test.srcs/sources_1/new/ethernet_controller_tx.v" \
+
+sv xil_defaultlib  --include "../../../../TRDP_PL_test.gen/sources_1/ip/clk_wiz_1_1" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ee60/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../TRDP_PL_test.srcs/sim_1/new/tb_ethernet_controller_tx.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

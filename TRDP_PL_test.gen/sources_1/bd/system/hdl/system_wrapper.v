@@ -1,0 +1,182 @@
+//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+//--------------------------------------------------------------------------------
+//Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+//Date        : Thu Sep  4 16:19:23 2025
+//Host        : DESKTOP-0HRFVUH running 64-bit major release  (build 9200)
+//Command     : generate_target system_wrapper.bd
+//Design      : system_wrapper
+//Purpose     : IP block netlist
+//--------------------------------------------------------------------------------
+`timescale 1 ps / 1 ps
+
+module system_wrapper
+   (DDR_addr,
+    DDR_ba,
+    DDR_cas_n,
+    DDR_ck_n,
+    DDR_ck_p,
+    DDR_cke,
+    DDR_cs_n,
+    DDR_dm,
+    DDR_dq,
+    DDR_dqs_n,
+    DDR_dqs_p,
+    DDR_odt,
+    DDR_ras_n,
+    DDR_reset_n,
+    DDR_we_n,
+    FIXED_IO_ddr_vrn,
+    FIXED_IO_ddr_vrp,
+    FIXED_IO_mio,
+    FIXED_IO_ps_clk,
+    FIXED_IO_ps_porb,
+    FIXED_IO_ps_srstb,
+    MDIO_PHY_1_mdc,
+    MDIO_PHY_1_mdio_io,
+    RGMII_1_rd,
+    RGMII_1_rx_ctl,
+    RGMII_1_rxc,
+    RGMII_1_td,
+    RGMII_1_tx_ctl,
+    RGMII_1_txc,
+    eth_mdc,
+    eth_mdio,
+    eth_rst_n,
+    eth_rx_ctl,
+    eth_rxc,
+    eth_rxd,
+    eth_tx_ctl,
+    eth_txc,
+    eth_txd,
+    led);
+  inout [14:0]DDR_addr;
+  inout [2:0]DDR_ba;
+  inout DDR_cas_n;
+  inout DDR_ck_n;
+  inout DDR_ck_p;
+  inout DDR_cke;
+  inout DDR_cs_n;
+  inout [3:0]DDR_dm;
+  inout [31:0]DDR_dq;
+  inout [3:0]DDR_dqs_n;
+  inout [3:0]DDR_dqs_p;
+  inout DDR_odt;
+  inout DDR_ras_n;
+  inout DDR_reset_n;
+  inout DDR_we_n;
+  inout FIXED_IO_ddr_vrn;
+  inout FIXED_IO_ddr_vrp;
+  inout [53:0]FIXED_IO_mio;
+  inout FIXED_IO_ps_clk;
+  inout FIXED_IO_ps_porb;
+  inout FIXED_IO_ps_srstb;
+  output MDIO_PHY_1_mdc;
+  inout MDIO_PHY_1_mdio_io;
+  input [3:0]RGMII_1_rd;
+  input RGMII_1_rx_ctl;
+  input RGMII_1_rxc;
+  output [3:0]RGMII_1_td;
+  output RGMII_1_tx_ctl;
+  output RGMII_1_txc;
+  output eth_mdc;
+  inout eth_mdio;
+  output eth_rst_n;
+  input eth_rx_ctl;
+  input eth_rxc;
+  input [3:0]eth_rxd;
+  output eth_tx_ctl;
+  output eth_txc;
+  output [3:0]eth_txd;
+  output [1:0]led;
+
+  wire [14:0]DDR_addr;
+  wire [2:0]DDR_ba;
+  wire DDR_cas_n;
+  wire DDR_ck_n;
+  wire DDR_ck_p;
+  wire DDR_cke;
+  wire DDR_cs_n;
+  wire [3:0]DDR_dm;
+  wire [31:0]DDR_dq;
+  wire [3:0]DDR_dqs_n;
+  wire [3:0]DDR_dqs_p;
+  wire DDR_odt;
+  wire DDR_ras_n;
+  wire DDR_reset_n;
+  wire DDR_we_n;
+  wire FIXED_IO_ddr_vrn;
+  wire FIXED_IO_ddr_vrp;
+  wire [53:0]FIXED_IO_mio;
+  wire FIXED_IO_ps_clk;
+  wire FIXED_IO_ps_porb;
+  wire FIXED_IO_ps_srstb;
+  wire MDIO_PHY_1_mdc;
+  wire MDIO_PHY_1_mdio_i;
+  wire MDIO_PHY_1_mdio_io;
+  wire MDIO_PHY_1_mdio_o;
+  wire MDIO_PHY_1_mdio_t;
+  wire [3:0]RGMII_1_rd;
+  wire RGMII_1_rx_ctl;
+  wire RGMII_1_rxc;
+  wire [3:0]RGMII_1_td;
+  wire RGMII_1_tx_ctl;
+  wire RGMII_1_txc;
+  wire eth_mdc;
+  wire eth_mdio;
+  wire eth_rst_n;
+  wire eth_rx_ctl;
+  wire eth_rxc;
+  wire [3:0]eth_rxd;
+  wire eth_tx_ctl;
+  wire eth_txc;
+  wire [3:0]eth_txd;
+  wire [1:0]led;
+
+  IOBUF MDIO_PHY_1_mdio_iobuf
+       (.I(MDIO_PHY_1_mdio_o),
+        .IO(MDIO_PHY_1_mdio_io),
+        .O(MDIO_PHY_1_mdio_i),
+        .T(MDIO_PHY_1_mdio_t));
+  system system_i
+       (.DDR_addr(DDR_addr),
+        .DDR_ba(DDR_ba),
+        .DDR_cas_n(DDR_cas_n),
+        .DDR_ck_n(DDR_ck_n),
+        .DDR_ck_p(DDR_ck_p),
+        .DDR_cke(DDR_cke),
+        .DDR_cs_n(DDR_cs_n),
+        .DDR_dm(DDR_dm),
+        .DDR_dq(DDR_dq),
+        .DDR_dqs_n(DDR_dqs_n),
+        .DDR_dqs_p(DDR_dqs_p),
+        .DDR_odt(DDR_odt),
+        .DDR_ras_n(DDR_ras_n),
+        .DDR_reset_n(DDR_reset_n),
+        .DDR_we_n(DDR_we_n),
+        .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
+        .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
+        .FIXED_IO_mio(FIXED_IO_mio),
+        .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
+        .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .MDIO_PHY_1_mdc(MDIO_PHY_1_mdc),
+        .MDIO_PHY_1_mdio_i(MDIO_PHY_1_mdio_i),
+        .MDIO_PHY_1_mdio_o(MDIO_PHY_1_mdio_o),
+        .MDIO_PHY_1_mdio_t(MDIO_PHY_1_mdio_t),
+        .RGMII_1_rd(RGMII_1_rd),
+        .RGMII_1_rx_ctl(RGMII_1_rx_ctl),
+        .RGMII_1_rxc(RGMII_1_rxc),
+        .RGMII_1_td(RGMII_1_td),
+        .RGMII_1_tx_ctl(RGMII_1_tx_ctl),
+        .RGMII_1_txc(RGMII_1_txc),
+        .eth_mdc(eth_mdc),
+        .eth_mdio(eth_mdio),
+        .eth_rst_n(eth_rst_n),
+        .eth_rx_ctl(eth_rx_ctl),
+        .eth_rxc(eth_rxc),
+        .eth_rxd(eth_rxd),
+        .eth_tx_ctl(eth_tx_ctl),
+        .eth_txc(eth_txc),
+        .eth_txd(eth_txd),
+        .led(led));
+endmodule
