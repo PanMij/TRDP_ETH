@@ -1,9 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../ADP_ARP.gen/sources_1/ip/clk_wiz_0" --include "../../../../../ADP_ARP.gen/sources_1/ip/clk_wiz_1_1" \
-"tb_adaptive_arp_func_impl.v" \
-
-sv xil_defaultlib  --include "../../../../../ADP_ARP.gen/sources_1/ip/clk_wiz_0" --include "../../../../../ADP_ARP.gen/sources_1/ip/clk_wiz_1_1" \
-"../../../../../ADP_ARP.srcs/sim_1/new/tb_adaptive_arp.sv" \
-
-# Do not sort compile order
-nosort
