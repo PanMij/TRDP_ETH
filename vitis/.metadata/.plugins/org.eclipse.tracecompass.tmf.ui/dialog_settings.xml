@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="editor.eventstable.column">
+		<section name="order">
+			<item key="com.xilinx.sdk.performance.core.PsTrace" value="[0, 1, 2]"/>
+		</section>
+		<section name="width">
+			<item key="com.xilinx.sdk.performance.core.PsTrace" value="[0, 125, 2490]"/>
+		</section>
+		<section name="resizable">
+			<item key="com.xilinx.sdk.performance.core.PsTrace" value="[false, true, true]"/>
+		</section>
+	</section>
+</section>

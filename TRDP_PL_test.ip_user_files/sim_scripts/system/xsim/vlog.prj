@@ -1,0 +1,19 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../TRDP_PL_test.gen/sources_1/bd/system/ipshared/ee60/hdl" \
+"../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
+"../../../bd/system/ip/system_fifo_generator_0_0/sim/system_fifo_generator_0_0.v" \
+"../../../bd/system/ip/system_fifo_generator_0_1/sim/system_fifo_generator_0_1.v" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
+"../../../bd/system/ip/system_util_vector_logic_0_0/sim/system_util_vector_logic_0_0.v" \
+"../../../bd/system/ip/system_mdio_rw_test_0_0/sim/system_mdio_rw_test_0_0.v" \
+"../../../bd/system/ip/system_gmii2rgmii_0_2/sim/system_gmii2rgmii_0_2.v" \
+"../../../bd/system/ip/system_ethernet_controller_0_0/sim/system_ethernet_controller_0_0.v" \
+"../../../bd/system/sim/system.v" \
+"../../../bd/system/ip/system_auto_us_0/sim/system_auto_us_0.v" \
+"../../../bd/system/ip/system_auto_us_1/sim/system_auto_us_1.v" \
+"../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+"../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
